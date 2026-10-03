@@ -1,0 +1,5 @@
+import type { Metadata } from "next";
+import { links } from "@/content/site";
+import { Arrow } from "@/components/Icons";
+export const metadata: Metadata={title:"About",description:"About Mayank Paswan, a software engineer and AI engineer building products and production systems."};
+export default function About(){return <main id="content" className="plain-page shell"><div className="kicker"><span>{"//"}</span> About</div><h1>Products meet<br/>systems.</h1><p className="lead">I’m a software engineer interested in the space where intelligent systems meet real products. I enjoy going from architecture diagrams to APIs to interfaces—and especially the messy middle where an idea has to become reliable and useful.</p><div className="note-empty"><span>BACKGROUND / 01</span><h2>IIT Kharagpur → production engineering</h2><p>I earned my B.Tech from IIT Kharagpur in 2023. Since then, I’ve worked across enterprise AI products, developer infrastructure, event-driven systems, and consumer-facing AI experiences.</p><a className="text-link" href={links.linkedin} target="_blank" rel="noreferrer">View LinkedIn <Arrow/></a></div></main>}
